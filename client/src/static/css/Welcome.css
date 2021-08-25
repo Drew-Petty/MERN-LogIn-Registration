@@ -1,0 +1,78 @@
+.welcome{
+    background-color: rgba(255, 255, 255, .9);
+    border: grey solid 5px;
+    border-radius: 10px;
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+    padding: 10px 0px;
+}
+fieldset{
+    padding: 5px;
+    width: 25vw;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+.formRow{
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0px;
+}
+.error{
+    color: red;
+    margin: 3px 0px;
+    text-align: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width:480px){
+    .welcome{
+        flex-direction: column;
+        align-content: center;
+        width: 95vw;
+
+    }
+    fieldset{
+        width: 90vw;
+    }
+}
+@media only screen and (min-width:481px){
+    .welcome{
+        flex-direction: column;
+        align-content: center;
+        width: 70vw;
+
+    }
+    fieldset{
+        width: 60vw;
+    }
+}
+@media only screen and (min-width:660px){
+    .welcome{
+        flex-direction: column;
+        align-content: center;
+        width: 50vw;
+
+    }
+    fieldset{
+        width: 45vw;
+    }
+}
+@media only screen and (min-width:1024px){
+    .welcome{
+        flex-direction: row;
+        align-content: center;
+        width: 60vw;
+
+    }
+    fieldset{
+        width: 25vw;
+    }
+}
